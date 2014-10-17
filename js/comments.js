@@ -1,7 +1,9 @@
 var main = function() {
   $('.btn').click(function() {
-    var post = $('.status-box').val();
-    $('<li>').text(post).prependTo('.posts');
+    var currentdate = new Date();
+    var datetime = "[" + currentdate.toUTCString() + "]:    ";
+    var post = datetime + $('.status-box').val();
+    $('<li>').text(post).appendTo('.posts');
     $('.status-box').val('');
     $('.counter').text('140');
     $('.btn').addClass('disabled');
