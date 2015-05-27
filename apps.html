@@ -18,6 +18,31 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+	
+	<script language='JavaScript'>
+	 <!--------------------------------------------------------------------
+	MicaNum = "0";
+	LugarNum = "0";
+	aux = "0";
+	
+	function float2int(value)
+	{
+		return value | 0;
+	}
+	
+	function MagicOrder(CardNum)
+	 { 
+		MicaNum = float2int((CardNum/9))+1;
+		aux = CardNum%9;
+		
+		if(aux==0) { MicaNum--; LugarNum=9; } else { LugarNum = aux; }
+		
+		document.MagicOder.nMica.value = MicaNum;
+		document.MagicOder.nLugar.value = LugarNum;
+	 }
+	//--------------------------------------------------------------->
+	</script>
+
   </head>
 
   <body>
@@ -39,7 +64,41 @@
       <!-- Body -->
       <br>
       <p class="lead">Apps</p>
-
+	
+	  <p class="lead">MagicOder</p>
+		<FORM name="MagicOder">
+		 <table border="0"> 
+		  <tr>
+			<td> 
+				N Carta:
+			</td>
+			<td>
+				<input type="text" maxlength="5" size="10" id="nCarta" /> 
+				<input type="button" value="GO!!!" OnClick="MagicOrder(document.getElementById('nCarta').value)" />
+			</td>
+		  </tr>
+		  <tr>
+			<td>
+			</td>
+		  </tr>
+		  <tr>
+			<td>
+				N Mica:
+			</td>
+			<td>
+				<input type="text" maxlength="5" size="10" id="nMica" />
+			</td>
+		  </tr>
+		  <tr>
+			<td>
+				Lugar:
+			</td>
+			<td>
+				<input type="text" maxlength="1" size="10" id="nLugar" />
+			</td>
+		  </tr>
+		 </table>
+		</FORM>
       
     </div>
     <!-- content end -->
