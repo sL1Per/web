@@ -18,28 +18,28 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-	
+
 	<script language='JavaScript'>
 	 <!--------------------------------------------------------------------
 	MicaNum = "0";
 	LugarNum = "0";
 	aux = "0";
-	
+
 	function float2int(value)
 	{
 		return value | 0;
 	}
-	
+
 	function MagicOrder(CardNum)
-	 { 
+	 {
 		MicaNum = float2int((CardNum/9))+1;
 		aux = CardNum%9;
-		
+
 		if(aux==0) { MicaNum--; LugarNum=9; } else { LugarNum = aux; }
-		
+
 		document.MagicOder.nMica.value = MicaNum;
 		document.MagicOder.nLugar.value = LugarNum;
-		
+
 		document.getElementById("nMica").readOnly = true;
 		document.getElementById("nLugar").readOnly = true;
 	 }
@@ -59,7 +59,7 @@
         <li class="active"><a href="index.html">Home</a></li>
         <li class="active"><a href="bikes.html">Bikes</a></li>
         <li class="active">Apps</li>
-        <li class="active">Work</li>
+        <li class="active"><a href="work.html">Work</a></li>
         <li class="active">Code</li>
       </ol>
       <!--<p class="navbar-text navbar-right"><h3>Pedro viegas</h3></p>  -->
@@ -67,16 +67,16 @@
       <!-- Body -->
       <br>
       <p class="lead">Apps</p>
-	
-	  <p class="lead">MagicOder</p>
+
+	  <p class="lead">MagicOder <br>(order cards in a folder by its number)</p>
 		<FORM name="MagicOder">
-		 <table border="0"> 
+		 <table border="0">
 		  <tr>
-			<td> 
-				N Carta:
+			<td>
+				Card:
 			</td>
 			<td>
-				<input type="text" maxlength="5" size="10" id="nCarta" /> 
+				<input type="text" maxlength="5" size="10" id="nCarta" />
 				<input type="button" value="GO!!!" OnClick="MagicOrder(document.getElementById('nCarta').value)" />
 			</td>
 		  </tr>
@@ -87,18 +87,18 @@
 		  </tr>
 		  <tr>
 			<td>
-				N Mica:
+				Folder:
 			</td>
 			<td>
-				<input type="text" maxlength="5" size="10" id="nMica" />
+				<input type="text" maxlength="5" size="10" id="nMica"  readonly/>
 			</td>
 		  </tr>
 		  <tr>
 			<td>
-				Lugar:
+				Place:
 			</td>
 			<td>
-				<input type="text" maxlength="1" size="10" id="nLugar" />
+				<input type="text" maxlength="1" size="10" id="nLugar" readonly />
 			</td>
 		  </tr>
 		 </table>
