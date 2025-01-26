@@ -1,77 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <!-- <link rel="icon" href="../../favicon.ico"> -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalistic Personal Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+</head>
+<body>
+    <header>
+        <h1>Pedro Viegas</h1>
+        <nav>
+            <a href="#About">About Me</a>
+            <a href="#Curriculum">CV</a>
+            <a href="#Hobbies">Hobbies</a>
+            <a href="#Links">My Links</a>
+        </nav>
+    </header>
 
-    <title>Pedro Viegas #Home</title>
+    <section id="about" class="profile">
+        <img src="img/avatar.png" alt="Profile Picture">
+        <p>I am a detail-oriented and results-driven professional, recognized for my proactive approach and ability to drive operational excellence. My expertise lies in effectively managing resources and delivering well-structured outcomes. I excel in:</p>
+	    <ul style="list-style-type:disc;">
+            <li>Strategic planning and efficient resource management to meet organizational objectives</li>
+            <li>Analytical problem-solving with a focus on delivering practical solutions</li>
+            <li>Dependability and a strong sense of accountability in all responsibilities</li>
+            <li>Thriving under pressure while maintaining high-quality results</li>
+            <li>Building collaborative relationships across teams and diverse cultures</li>
+          </ul>    
+        <p>I bring a methodical and structured approach to every task, ensuring processes are optimized, and goals are achieved with precision.</p>
+    </section>
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <section id="cv" class="cv">
+        <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="pgpviegas" data-version="v1"></div>
+        <div class="cv-details">
+            <img src="img/CCSM_R77.png" alt="CCSM R77">
+            <img src="img/securityPlus.png" alt="Comptia Security+">
+            <img src="img/Kemp Engineer.png" alt="Kemp Engieer">
+            <img src="img/Digital_Badge_PRINCE2_FOUNDATION_352x352_pixels.webp" alt="Prince2 Foundations">
+        </div>
+    </section>
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
+    <section id="hobbies" class="hobbies">
+        <img src="img/karate.jpg" alt="ShinKyokushinKai Karate">
+        <img src="img/MTB.png" alt="Moutain Bike">
+        <img src="img/cybersec.avif" alt="Cyber Security">
+    </section>
 
-  <body>
+    <section id="links" class="links">
+        <ul>
+            <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com" target="_blank">GitHub</a></li>
+            <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+            <li><a href="https://portfolio.example.com" target="_blank">Portfolio</a></li>
+        </ul>
+    </section>
 
-    <!-- Begin page content -->
-    <div class="container">
-
-      <!-- Navbar and header-->
-      <br>
-      <ol class="breadcrumb">
-        <li class="active">Home</li>
-        <li class="active"><a href="bikes.html">Bikes</a></li>
-        <li class="active"><a href="apps.html">Apps</a></li>
-        <li class="active"><a href="work.html">Work</a></li>
-        <li class="active">Code</li>
-      </ol>
-
-      <!-- Body -->
-      <br>
-      <p class="lead">My name is Pedro.
-        <br>I'm a network Infrastructure / Security Engineer from Portugal currently working in the Netherlands.
-        <br>I like to <code>code</code> and I love <mark>hiking</mark> and riding <mark>mountain bikes</mark>.</p>
-      <p class="lead">I like it simple.</p>
-      <br>
-      <br>
-      <br>
-    </div>
-    <!-- Content end -->
-
-    <!-- Fixed footer -->
-    <div class="footer">
-      <div class="container">
-        <p class="text-muted">
-          <div>© 2014 Pedro Viegas. All rights reserved.</div>
-          <div>
-            <a href="https://www.facebook.com/slipviegas" target="_blank">
-              <img src="imgs/facebook_ico.png" class="img-rounded" style="max-width: 30px; height: auto;"></a>
-            <a href="http://instagram.com/pedro_viegas" target="_blank">
-              <img src="imgs/instagram_ico.png" class="img-rounded" style="max-width: 30px; height: auto;"></a>
-            <a href="http://pedroviegas.deviantart.com" target="_blank">
-              <img src="imgs/deviantArt_ico.png" class="img-rounded" style="max-width: 30px; height: auto;"></a>
-            <a href="https://www.linkedin.com/in/pgpviegas" target="_blank">
-            <img src="imgs/linkedIN_ico.png" class="img-rounded" style="max-width: 30px; height: auto;"></a>
-          </div>
-        </p>
-      </div>
-    </div>
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-
-  </body>
+    <footer>
+        &copy; 2025 Pedro Viegas. All rights reserved.
+    </footer>
+</body>
 </html>
