@@ -99,34 +99,40 @@ section h2 {
 
 .hobbies img {
     width: 300px;
-    height: 250px;
+    height: 300px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.links {
-    text-align: center;
+.hobbies {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1.5rem;
 }
 
-.links ul {
-    list-style: none;
-    padding: 0;
+.hobbies img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: filter 0.3s;
+    position: relative;
 }
 
-.links ul li {
-    margin: 1rem 0;
+.hobbies img:hover {
+    filter: brightness(0.6);
 }
 
-.links a {
-    text-decoration: none;
-    color: #222;
-    font-size: 1.2rem;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-.links a:hover {
-    color: #555;
+.hobbies img:hover::after {
+    content: attr(alt);
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
 }
 
 footer {
